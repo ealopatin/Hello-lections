@@ -21,9 +21,30 @@ void PrintArray(int[] collection2)
 
 }   
 
+int IndexOf(int[]] collection, int find)
 int [] array = new int [10];
+{
+    int count = collection.Lenght;  
+    int index = 0;
+    int position = 0;
+
+    while (index < count)
+    {
+        if(collection[index]==find)
+        {
+            position = index;
+        }
+        index++;
+    }
+    return position;
+
+}
 
 FillArray(array);
 PrintArray(array);
+Console.WriteLine();
+
+int pos = IndexOf(array,4);
+Console.WriteLine(pos);
 
 //с void не исользуем return
